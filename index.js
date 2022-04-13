@@ -90,7 +90,7 @@ function addFlavor(menu, newFlavor){
   menu.unshift(newFlavor);
   return menu;
  }
-console.log(addFlavor(originalFlavors, `Rainbow Sherbert`));
+// console.log(addFlavor(originalFlavors, `Rainbow Sherbert`));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
@@ -150,7 +150,7 @@ function removeFlavorByName(menu, str){
     return newMenu;
   } else {return `This isn't a flavor we currently sell.`}
 }
-removeFlavorByName(originalFlavors, "Rocky Road")
+// removeFlavorByName(originalFlavors, "Rocky Road")
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -172,10 +172,27 @@ Use the filterByWord function below to do the following:
 */
 
 
-function filterByWord(menu, str){
-  /*your code here*/
+function filterByWord(menu, flavor) {
+  const showcaseFlavors = [];
+  for(let i=0; i<menu.length; i++){
+    if(menu[i].includes(flavor)){
+      console.log(menu[i]);
+      showcaseFlavors.push(menu[i]);
+    }
+  } return showcaseFlavors;
 }
+// function filterByWord(menu, flavor){
+// const showCase = []
+//     for (let i=0; i==menu.length; i++){
+//       if(menu[i].includes(flavor)) {
+//         showCase.push(menu[i]);
+//         console.log(`${menu[i]} has been pushed.`)
+//       }
+//       return showCase;
+//     }
 
+//   }
+filterByWord(originalFlavors, "Chocolate");
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
