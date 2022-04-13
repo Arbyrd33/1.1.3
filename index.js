@@ -87,7 +87,7 @@ Use the addFlavor function below to do the following:
 
 
 function addFlavor(menu, newFlavor){
-  menu.pop(newFlavor);
+  menu.unshift(newFlavor);
   return menu;
  }
 addFlavor(originalFlavors, `Rainbow Sherbert`);
