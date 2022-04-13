@@ -90,8 +90,7 @@ function addFlavor(menu, newFlavor){
   menu.unshift(newFlavor);
   return menu;
  }
-addFlavor(originalFlavors, `Rainbow Sherbert`);
-
+console.log(addFlavor(originalFlavors, `Rainbow Sherbert`));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
@@ -105,8 +104,9 @@ Use the removeLastFlavor function below to do the following:
 */
 
 
-function removeLastFlavor(/*your code here*/){
- /*your code here*/
+function removeLastFlavor(menu){
+  menu.pop();
+  return menu;
 }
 
 
