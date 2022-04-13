@@ -115,7 +115,7 @@ function removeLastFlavor(menu){
 Write a function that returns a flavor at a given index in the array.
 
 Use the getFlavorByIndex function below to do the following:
-  1. Recieve an array in the first parameter that will take the flavors array as an argument
+  1. Receive an array in the first parameter that will take the flavors array as an argument
   2. Receive a number in the second parameter that will take the the desired index as an argument
   3. Return the flavor located at the received index position
 
