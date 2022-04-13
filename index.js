@@ -172,7 +172,7 @@ Use the filterByWord function below to do the following:
 */
 
 
-function filterByWord(/*your code here*/){
+function filterByWord(menu, str){
   /*your code here*/
 }
 
