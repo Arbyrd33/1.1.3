@@ -124,7 +124,7 @@ Use the getFlavorByIndex function below to do the following:
 
 
 function getFlavorByIndex(menu, n){
-  return menu[n];
+  return menu[n]
 }
 
 
@@ -143,10 +143,14 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-  /*your code here*/
+function removeFlavorByName(menu, str){
+  let newMenu = [...menu]
+  if (newMenu.includes(str) === true) {
+    newMenu.splice(newMenu.indexOf(str), 1);
+    return newMenu;
+  } else {return `This isn't a flavor we currently sell.`}
 }
-
+removeFlavorByName(originalFlavors, "Rocky Road")
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
